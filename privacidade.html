@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Política de Privacidade — ViralClip</h1>
-  <p class="updated">Última atualização: 10 de outubro de 2026</p>
+  <p class="updated">Última atualização: 10 de outubro de 2026 (página Desempenho)</p>
 
   <p>O ViralClip é um aplicativo pessoal de computador (Windows), usado somente pelo seu dono para criar cortes de vídeo e
     publicá-los nas próprias contas. Ele não tem servidor próprio: todos os dados ficam no computador onde o aplicativo
@@ -34,19 +34,27 @@
   <ul>
     <li><code>youtube.upload</code> — para <strong>enviar</strong> os vídeos criados pelo próprio aplicativo ao canal;</li>
     <li><code>youtube.force-ssl</code> — para <strong>agendar</strong> a publicação, <strong>alterar o título, a descrição
-      e o horário</strong> desses vídeos e <strong>consultar</strong> se foram processados e publicados, além de ler o nome
-      do canal conectado.</li>
+      e o horário</strong> desses vídeos, <strong>consultar</strong> se foram processados e publicados, ler o nome do canal
+      conectado, as <strong>estatísticas públicas</strong> (visualizações, curtidas, número de comentários) dos vídeos
+      publicados pelo aplicativo e, <strong>somente se o dono ativar</strong> na página Desempenho, os
+      <strong>comentários</strong> desses vídeos (texto, nome público do autor, data e curtidas), para ele acompanhar e
+      responder pelo YouTube Studio;</li>
+    <li><code>yt-analytics.readonly</code> (opcional) — para ler os relatórios do YouTube Analytics do próprio canal
+      (visualizações por dia, tempo assistido, compartilhamentos e duração média assistida) e mostrar o desempenho dos
+      vídeos na página Desempenho. Quem não marcar essa permissão continua usando o aplicativo normalmente.</li>
   </ul>
-  <p>O aplicativo usa essas permissões somente para essas funções. Ele não lê comentários, mensagens, inscritos, dados de
-    outros canais nem qualquer informação além do necessário para publicar os vídeos do próprio dono.</p>
+  <p>O aplicativo usa essas permissões somente para essas funções. Ele não lê mensagens, inscritos nem dados de outros
+    canais, não responde comentários sozinho e não acessa informação além do necessário para publicar e acompanhar os
+    vídeos do próprio dono.</p>
 
   <h2>2. Onde os dados ficam</h2>
   <ul>
     <li>As credenciais de acesso (token de atualização e a chave do cliente OAuth) ficam <strong>somente no computador do
       dono</strong>, criptografadas com a proteção de dados do Windows (DPAPI). O token de acesso temporário fica apenas
       na memória enquanto o aplicativo está aberto.</li>
-    <li>Título, descrição, horário e o identificador dos vídeos publicados ficam no banco de dados local do aplicativo,
-      no mesmo computador.</li>
+    <li>Título, descrição, horário e o identificador dos vídeos publicados, as métricas lidas (com o histórico usado para
+      calcular crescimento) e, se ativados, os comentários ficam no banco de dados local do aplicativo, no mesmo
+      computador. Métricas antigas são agregadas automaticamente e os comentários têm limite de armazenamento.</li>
     <li>Nenhuma credencial é gravada em registros (logs), arquivos de texto ou exibida na tela.</li>
   </ul>
 
@@ -76,7 +84,9 @@
 
   <h2>6. Outras plataformas</h2>
   <p>Para o TikTok, o aplicativo usa o serviço Buffer, com a conta do próprio dono. Os vídeos enviados ao TikTok passam
-    pelo Buffer conforme a política de privacidade desse serviço. Nenhum dado do Google/YouTube é enviado ao Buffer.</p>
+    pelo Buffer conforme a política de privacidade desse serviço, e as métricas dos posts do TikTok (visualizações,
+    curtidas, comentários, compartilhamentos e tempo assistido) são lidas da API do Buffer. Nenhum dado do Google/YouTube
+    é enviado ao Buffer.</p>
 
   <h2>7. Contato</h2>
   <p>Dúvidas sobre esta política: <a href="https://github.com/C03LHO">github.com/C03LHO</a>.</p>
